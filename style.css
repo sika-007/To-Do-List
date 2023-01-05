@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    height: 100vh;
+    background-image: url(coffee.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#add-task-container {
+    width: 350px;
+    padding: 20px 10px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 3px;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+input {
+    flex-grow: 1;
+    margin-right: 10px;
+    border-radius: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#add-task {
+    font-size: 1.2rem;
+    padding: 5px;
+    background-color: white;
+    color: green;
+    border: 2px solid green;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+#add-task:hover {
+    background-color: green;
+    color: white;
+}
+
+/*Styling for tasks which are going to be added*/
+ 
+.task {
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 3px;
+    padding: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.task li {
+    list-style: none;
+    flex-grow: 1;
+    padding: 5px;
+    font-size: 1.3rem;
+    margin-left: 10px;
+}
+
+.task button {
+    margin: 2px;
+    background-color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.task .check-task {
+    color: orange;
+    margin-right: 0px;
+    border: solid 2px orange;
+    font-size: 1.5rem;
+}
+
+.task .check-task:hover {
+    background-color: orange;
+    color: white;
+}
+
+.task .delete-task {
+    color: red;
+    border: solid 2px red;
+    font-size: 1.5rem;
+}
+
+.task .delete-task:hover {
+    background-color: red;
+    color: white;
+}
